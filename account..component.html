@@ -1,0 +1,9 @@
+<div class="account-container">
+    <h2>Account Information</h2>
+    <div *ngIf="user">
+      <p><strong>Username:</strong> {{ user.username }}</p>
+      <p><strong>Password:</strong> {{ user.password }}</p>
+      <button mat-raised-button color="warn" (click)="onLogout()">Logout</button>
+    </div>
+  </div>
+  
